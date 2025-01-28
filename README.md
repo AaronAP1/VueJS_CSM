@@ -1,7 +1,7 @@
 # MrvVuej
 ![image](https://github.com/user-attachments/assets/b16da2dd-ab02-481e-9922-59f418f608f6)
 
-Este proyecto es el reto Front-end de desarrollo con VUE
+Este proyecto de prueba desarrollo con VUE
 
 ## Requisitos
 
