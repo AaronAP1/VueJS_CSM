@@ -1,51 +1,128 @@
-#  MrvVuej
+# MrvVuej
+![image](https://github.com/user-attachments/assets/b16da2dd-ab02-481e-9922-59f418f608f6)
 
-This template should help get you started developing with Vue 3 in Vite.
+Este proyecto es el reto Front-end de desarrollo con VUE
 
-## Recommended IDE Setup
+## Requisitos
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Node.js (versión 14 o superior)
+- npm (versión 6 o superior)
 
-## Customize configuration
+## Instrucciones para instalar las dependencias
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+Para instalar las dependencias del proyecto, ejecuta el siguiente comando en la raíz del proyecto:
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Configuración y ejecución del proyecto
+
+### Compilar y recargar en caliente para desarrollo
+
+Para iniciar el servidor de desarrollo con recarga en caliente, ejecuta:
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Compilar y minificar para producción
+
+Para compilar el proyecto para producción, ejecuta:
 
 ```sh
 npm run build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Previsualizar la compilación de producción
+
+Para previsualizar la compilación de producción, ejecuta:
+
+```sh
+npm run preview
+```
+
+### Ejecutar pruebas unitarias con Vitest
+
+Para ejecutar las pruebas unitarias, ejecuta:
 
 ```sh
 npm run test:unit
 ```
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+### Ejecutar pruebas de extremo a extremo con Cypress
+
+Para ejecutar las pruebas de extremo a extremo en el servidor de desarrollo, ejecuta:
 
 ```sh
 npm run test:e2e:dev
 ```
 
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
+Para ejecutar las pruebas de extremo a extremo en la compilación de producción, ejecuta:
 
 ```sh
 npm run build
 npm run test:e2e
 ```
+
+## Estructura del proyecto
+
+La estructura del proyecto es la siguiente:
+
+```
+.gitignore
+.vscode/
+  extensions.json
+  settings.json
+cypress/
+  e2e/
+    example.cy.js
+  fixtures/
+    example.json
+  jsconfig.json
+  support/
+    commands.js
+    e2e.js
+cypress.config.js
+index.html
+jsconfig.json
+package.json
+public/
+README.md
+src/
+  App.vue
+  assets/
+    base.css
+    main.css
+  components/
+    UserList.vue
+  main.js
+  services/
+    api.js
+vite.config.js
+vitest.config.js
+```
+
+### Descripción de los archivos y directorios principales
+
+- **.gitignore**: Archivos y directorios que Git debe ignorar.
+- **.vscode**: Configuración específica de Visual Studio Code.
+- **cypress**: Archivos de configuración y pruebas de Cypress.
+- **cypress.config.js**: Configuración de Cypress.
+- **index.html**: Archivo HTML principal.
+- **jsconfig.json**: Configuración de JavaScript.
+- **package.json**: Información del proyecto y scripts de npm.
+- **public**: Archivos públicos.
+- **README.md**: Documentación del proyecto.
+- **src**: Código fuente del proyecto.
+  - **App.vue**: Componente principal de la aplicación.
+  - `assets/`: Archivos CSS y otros recursos.
+  - `components/`: Componentes Vue reutilizables.
+    - **UserList.vue**: Componente para la lista de usuarios.
+  - **main.js**: Punto de entrada de la aplicación.
+  - `services/`: Servicios de la aplicación.
+    - **api.js**: Configuración de Axios para llamadas a la API.
+- **vite.config.js**: Configuración de Vite.
+- **vitest.config.js**: Configuración de Vitest.
+
+---
